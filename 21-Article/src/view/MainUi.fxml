@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="970.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainUi">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="140.0" style="-fx-background-color: #2b579a;">
+         <children>
+            <ListView fx:id="list_menu" layoutX="-5.0" layoutY="79.0" onMouseClicked="#MenuListListener" prefHeight="480.0" prefWidth="155.0" stylesheets="@../application/listView.css" />
+            <Label layoutX="32.0" layoutY="569.0" prefHeight="17.0" prefWidth="87.0" text="version: 0.3.1" textFill="#90caf9" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pane_data" layoutX="150.0" layoutY="44.0" prefHeight="554.0" prefWidth="821.0" style="-fx-background-color: #ffffff;" />
+      <Label fx:id="lbl_Title" alignment="CENTER" contentDisplay="CENTER" layoutX="150.0" prefHeight="44.0" prefWidth="821.0" style="-fx-background-color: #1d3b68;" text="Artikel" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

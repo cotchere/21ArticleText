@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ArticleTable">
+   <children>
+      <JFXProgressBar layoutX="14.0" layoutY="510.0" prefHeight="12.0" prefWidth="504.0" progress="0.31" style="-fx-border-color: #307de1;" />
+      <JFXButton fx:id="btn_save" layoutX="649.0" layoutY="490.0" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #307de1;" text="speichern" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXTreeTableView layoutX="14.0" layoutY="67.0" prefHeight="415.0" prefWidth="790.0" />
+      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="32.0" prefHeight="25.0" prefWidth="272.0" promptText="Suche">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
