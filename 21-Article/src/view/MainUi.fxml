@@ -9,7 +9,7 @@
    <children>
       <AnchorPane prefHeight="600.0" prefWidth="140.0" style="-fx-background-color: #2b579a;">
          <children>
-            <ListView fx:id="list_menu" layoutX="-5.0" layoutY="79.0" onMouseClicked="#MenuListListener" prefHeight="480.0" prefWidth="155.0" stylesheets="@../application/listView.css" />
+            <ListView fx:id="list_menu" layoutX="-5.0" layoutY="79.0" onMouseClicked="#MenuListListener" prefHeight="480.0" prefWidth="155.0" stylesheets="@../css/listView.css" />
             <Label layoutX="32.0" layoutY="569.0" prefHeight="17.0" prefWidth="87.0" text="version: 0.3.1" textFill="#90caf9" />
          </children>
       </AnchorPane>
