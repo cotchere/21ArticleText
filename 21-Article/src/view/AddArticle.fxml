@@ -8,16 +8,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane styleClass="anchorLayout" stylesheets="@../css/container.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddArticleController">
+<AnchorPane fx:id="paneTable" styleClass="anchorLayout" stylesheets="@../css/container.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddArticleController">
    <children>
-      <JFXComboBox layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="200.0" promptText="Marke" />
-      <JFXListView layoutX="14.0" layoutY="77.0" prefHeight="451.0" prefWidth="200.0" />
+      <JFXComboBox fx:id="cb_brand" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="200.0" promptText="Marke" />
+      <JFXListView fx:id="list_article" layoutX="14.0" layoutY="77.0" prefHeight="451.0" prefWidth="200.0" stylesheets="@../css/addListViewLayout.css" />
       <JFXTextArea fx:id="txt_art" layoutX="225.0" layoutY="77.0" prefHeight="388.0" prefWidth="582.0" />
-      <Label layoutX="225.0" layoutY="19.0" prefHeight="23.0" prefWidth="582.0" style="-fx-padding: 8px;" text="Nike" textFill="#307de1">
+      <Label fx:id="lbl_brandLabel" layoutX="225.0" layoutY="19.0" prefHeight="23.0" prefWidth="582.0" style="-fx-padding: 8px;" text="Nike" textFill="#307de1">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <JFXButton layoutX="697.0" layoutY="498.0" prefHeight="30.0" prefWidth="110.0" styleClass="jfButton" stylesheets="@../css/container.css" text="hinzufügen" textFill="WHITE" />
+      <JFXButton fx:id="btn_add" layoutX="697.0" layoutY="498.0" onMouseClicked="#AddArticleListener" prefHeight="30.0" prefWidth="110.0" styleClass="jfButton" stylesheets="@../css/container.css" text="hinzufügen" textFill="WHITE" />
    </children>
 </AnchorPane>
