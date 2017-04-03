@@ -19,7 +19,7 @@ import manager.UIManager;
 public class AddArticleController implements javafx.fxml.Initializable {
 
 	@FXML
-	private AnchorPane paneTable;
+	private AnchorPane mainPane;
 
 	@FXML
 	private JFXButton btn_add;
@@ -45,7 +45,7 @@ public class AddArticleController implements javafx.fxml.Initializable {
 	}
 
 	private void showUp() {
-		new FadeInUpTransition(paneTable).play();
+		new FadeInUpTransition(mainPane).play();
 
 	}
 

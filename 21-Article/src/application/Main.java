@@ -7,6 +7,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import manager.DataManager;
 
 public class Main extends Application {
 	@Override
@@ -22,6 +23,10 @@ public class Main extends Application {
 		primaryStage.setScene(scene);
 		primaryStage.sizeToScene();
 		primaryStage.show();
+		
+		DataManager.setupBrands();
+		DataManager.addArticleToBrand("BK2724");
+		DataManager.searchForArticle(true, false, false, false);
 	}
 
 	public static void main(String[] args) {

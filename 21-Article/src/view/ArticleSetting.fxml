@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="970.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="970.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingController">
    <children>
       <Label layoutY="14.0" prefHeight="45.0" prefWidth="970.0" style="-fx-padding: 8;" text="Sprachsuche" textAlignment="CENTER" textFill="#307de1">
          <font>
@@ -17,10 +17,10 @@
             <Insets />
          </opaqueInsets>
       </Label>
-      <JFXCheckBox layoutX="15.0" layoutY="69.0" text="deutsch" />
-      <JFXCheckBox layoutX="150.0" layoutY="69.0" text="englisch" />
-      <JFXCheckBox layoutX="285.0" layoutY="69.0" text="spanisch" />
-      <JFXCheckBox layoutX="420.0" layoutY="69.0" text="französisch" />
+      <JFXCheckBox fx:id="cb_german" checkedColor="#307de1" layoutX="15.0" layoutY="69.0" selected="true" text="deutsch" />
+      <JFXCheckBox fx:id="cb_english" checkedColor="#307de1" layoutX="150.0" layoutY="69.0" text="englisch" />
+      <JFXCheckBox fx:id="cb_spanish" checkedColor="#307de1" layoutX="285.0" layoutY="69.0" text="spanisch" />
+      <JFXCheckBox fx:id="cb_french" checkedColor="#307de1" layoutX="420.0" layoutY="69.0" text="französisch" />
       <Label layoutY="130.0" prefHeight="45.0" prefWidth="970.0" style="-fx-padding: 8;" text="automatische Speicherung" textAlignment="CENTER" textFill="#307de1">
          <font>
             <Font size="18.0" />
@@ -29,7 +29,7 @@
             <Insets />
          </opaqueInsets>
       </Label>
-      <JFXCheckBox layoutX="15.0" layoutY="187.0" text="aktivieren" />
+      <JFXCheckBox checkedColor="#307de1" layoutX="15.0" layoutY="187.0" text="aktivieren" />
       <JFXTextField layoutX="164.0" layoutY="183.0" prefHeight="25.0" prefWidth="513.0" />
    </children>
 </AnchorPane>

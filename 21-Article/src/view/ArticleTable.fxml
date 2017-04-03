@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import com.jfoenix.controls.JFXSpinner?>
 <?import com.jfoenix.controls.JFXTextField?>
-<?import com.jfoenix.controls.JFXTreeTableView?>
-<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="paneTable" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="821.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ArticleTable">
-   <children>
-      <JFXButton fx:id="btn_save" layoutX="649.0" layoutY="490.0" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #307de1;" text="speichern" textFill="WHITE">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXButton>
-      <JFXTreeTableView layoutX="14.0" layoutY="67.0" prefHeight="415.0" prefWidth="790.0" />
-      <JFXTextField labelFloat="true" layoutX="14.0" layoutY="32.0" prefHeight="25.0" prefWidth="272.0" promptText="Suche">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </JFXTextField>
-      <JFXSpinner layoutX="14.0" layoutY="500.0" />
-      <Label layoutX="46.0" layoutY="508.0" prefHeight="17.0" prefWidth="264.0" text="Status: 20:300" textFill="#307de1" />
-   </children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="821.0" stylesheets="@../css/container.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ArticleTable">
+	<children>
+      <AnchorPane fx:id="mainPane" layoutX="-6.0" layoutY="-7.0" prefHeight="561.0" prefWidth="828.0">
+         <children>
+      		
+      		<JFXTextField labelFloat="true" layoutX="14.0" layoutY="43.0" prefHeight="33.0" prefWidth="272.0" promptText="Suche">
+      			<font>
+      				<Font size="14.0" />
+      			</font>
+      		</JFXTextField>
+      		
+            <TableView fx:id="tableView" layoutX="14.0" layoutY="102.0" prefHeight="427.0" prefWidth="787.0">
+              <columns>
+              <TableColumn fx:id="col_brand" prefWidth="92.0" text="Brand" />
+              <TableColumn fx:id="col_artNr" prefWidth="121.0" text="ArtNr." />
+              <TableColumn fx:id="col_name" prefWidth="231.0" text="Name" />
+              <TableColumn fx:id="col_found" prefWidth="145.0" text="Gefunden" />
+              <TableColumn fx:id="col_preview" prefWidth="160.0" text="Vorschau" />
+            </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="20.0" prefWidth="821.0">
+         <children>
+      		<ProgressBar fx:id="bar" prefHeight="20.0" prefWidth="821.0" progress="0.0" />
+         </children>
+      </AnchorPane>
+      
+	</children>
 </AnchorPane>

@@ -50,7 +50,7 @@ public class MainUi implements javafx.fxml.Initializable {
 			lbl_Title.setText("Artikel (+)");
 			break;
 		case 2:
-			loadAnchorPane(pane_data, "ArticleTable.fxml");
+			loadAnchorPane(pane_data, "SearchArticle.fxml");
 			lbl_Title.setText("suchen");
 			break;
 		case 3:

@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="paneTable" styleClass="anchorLayout" stylesheets="@../css/container.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddArticleController">
+<AnchorPane fx:id="mainPane" styleClass="anchorLayout" stylesheets="@../css/container.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddArticleController">
    <children>
       <JFXComboBox fx:id="cb_brand" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="200.0" promptText="Marke" />
       <JFXListView fx:id="list_article" layoutX="14.0" layoutY="77.0" prefHeight="451.0" prefWidth="200.0" stylesheets="@../css/addListViewLayout.css" />
